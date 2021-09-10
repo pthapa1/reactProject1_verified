@@ -5,12 +5,17 @@ import { SimpleColoseBtn } from './simpleClosebtn.styled';
 
 const Header = () => {
   const [isActive, setActive] = useState(false);
+  const [xline, setXline] = useState(false);
+  const makeX = () => {
+    setXline(!xline);
+  };
   const toggleClass = () => {
     setActive(!isActive);
   };
 
   const removeClassAndCloseMenu = () => {
     setActive(!isActive);
+    setXline(false);
   };
 
   const [show, setShow] = useState();
@@ -137,7 +142,7 @@ c-9 68 -25 105 -65 151 -64 72 -175 102 -268 72z m166 -67 c47 -23 88 -75 98
             toggleClass();
           }}
         >
-          <MobileMenu />
+          <MobileMenu xline={xline} makeX={makeX} />
         </div>
       </nav>
       <section className={`display-home ${show ? 'modal-bg' : ''}`}>

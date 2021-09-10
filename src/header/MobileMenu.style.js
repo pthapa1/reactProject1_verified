@@ -60,11 +60,7 @@ export const Line3 = styled(MenuLines)`
   }
 `;
 
-export const MobileMenu = (props) => {
-  const [xline, setXline] = useState(false);
-  const makeX = () => {
-    setXline(!xline);
-  };
+export const MobileMenu = ({ xline, makeX }) => {
   return (
     <React.Fragment>
       <Button onClick={() => makeX()}>
