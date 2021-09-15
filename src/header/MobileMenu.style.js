@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-const { forwardRef, useRef, useImperativeHandle } = React;
 
 export const Button = styled.button`
   display: none;

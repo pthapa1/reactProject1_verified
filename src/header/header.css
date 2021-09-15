@@ -258,24 +258,30 @@ body {
 .login-paragraph {
   line-height: 1.5rem;
 }
-.login-social-button {
+
+.login-social-link {
+  color: var(--white);
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   place-items: center;
   width: 100%;
   margin-top: 1em;
   background-color: rgb(66, 133, 244);
   border: transparent;
   border-radius: 4px;
+  text-decoration: none;
 }
-.login-button-icon {
+.push {
+  margin-left: calc(50% - 3em);
+}
+.login-icon {
   padding: 1em;
   background-color: var(--white);
   line-height: 0;
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
   display: inline-block;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
