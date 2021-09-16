@@ -266,31 +266,25 @@ body {
   place-items: center;
   width: 100%;
   margin-top: 1em;
-  background-color: rgb(66, 133, 244);
+  background-color: #4285f4;
   border: transparent;
   border-radius: 4px;
   text-decoration: none;
 }
 .push {
-  margin-left: calc(50% - 3em);
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: #ffffff;
+  margin: 0 auto;
 }
 .login-icon {
   padding: 1em;
   background-color: var(--white);
   line-height: 0;
-  width: 3em;
   height: 3em;
-  display: inline-block;
-  /* border: 1px solid; */
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  width: 3em;
 }
-.login-social-button span {
-  margin: 0 auto;
-  color: var(--white);
-  letter-spacing: 0.05rem;
-  font-size: 1rem;
-}
+
 .close-modal {
   position: absolute;
   top: 13px;

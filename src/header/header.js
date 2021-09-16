@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './header.css';
 import { MobileMenu } from './MobileMenu.style';
 import { SimpleColoseBtn } from './simpleClosebtn.styled';
+import { LoginButton } from './LoginButtons.styled';
+import { ReactComponent as FacebookIcon } from './svg/FacebookIcon.svg';
 
 const Header = () => {
   const [isActive, setActive] = useState(false);
@@ -250,6 +252,11 @@ c-9 68 -25 105 -65 151 -64 72 -175 102 -268 72z m166 -67 c47 -23 88 -75 98
             <span className='push'>Google</span>
           </a>
 
+          <LoginButton
+            href='#'
+            text='Facebook'
+            svgPath={<FacebookIcon />}
+          ></LoginButton>
           <div onClick={() => setShow(false)}>
             <SimpleColoseBtn className='close-modal'></SimpleColoseBtn>
           </div>
