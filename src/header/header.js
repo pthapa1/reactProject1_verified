@@ -256,6 +256,8 @@ c-9 68 -25 105 -65 151 -64 72 -175 102 -268 72z m166 -67 c47 -23 88 -75 98
             href='#'
             text='Facebook'
             svgPath={<FacebookIcon />}
+            backgroundColor='#1877f2'
+            svgPadding='0.5em'
           ></LoginButton>
           <div onClick={() => setShow(false)}>
             <SimpleColoseBtn className='close-modal'></SimpleColoseBtn>

@@ -278,7 +278,7 @@ body {
   margin: 0 auto;
 }
 .login-icon {
-  padding: 1em;
+  padding: 0.9em;
   background-color: var(--white);
   line-height: 0;
   height: 3em;

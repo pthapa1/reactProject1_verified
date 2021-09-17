@@ -8,16 +8,14 @@ export const Link = styled.a`
   place-items: center;
   width: 100%;
   margin-top: 1em;
-  background-color: #4285f4;
-  border: transparent;
+  background-color: ${(props) => props.backgroundColor || '#000'};
   border-radius: 4px;
   text-decoration: none;
 `;
 
 export const Svg = styled.div`
-  padding: 1em;
-  background-color: #fff;
-  line-height: 0;
+  padding: ${(props) => props.svgPadding || '1em'};
+  background-color: ${(props) => props.svgIconBackground || '#fff'};
   width: 3em;
   height: 3em;
 `;
@@ -29,11 +27,20 @@ export const Text = styled.span`
   color: #ffffff;
 `;
 
-export const LoginButton = ({ svgPath, text, href }) => {
+export const LoginButton = ({
+  svgPath,
+  text,
+  href,
+  backgroundColor,
+  svgIconBackground,
+  svgPadding,
+}) => {
   return (
     <>
-      <Link href={href}>
-        <Svg>{svgPath}</Svg>
+      <Link href={href} backgroundColor={backgroundColor}>
+        <Svg svgIconBackground={svgIconBackground} svgPadding={svgPadding}>
+          {svgPath}
+        </Svg>
         <Text>{text}</Text>
       </Link>
     </>
