@@ -259,32 +259,6 @@ body {
   line-height: 1.5rem;
 }
 
-.login-social-link {
-  color: var(--white);
-  display: flex;
-  justify-content: flex-start;
-  place-items: center;
-  width: 100%;
-  margin-top: 1em;
-  background-color: #4285f4;
-  border: transparent;
-  border-radius: 4px;
-  text-decoration: none;
-}
-.push {
-  font-size: 1rem;
-  letter-spacing: 0.05rem;
-  color: #ffffff;
-  margin: 0 auto;
-}
-.login-icon {
-  padding: 0.9em;
-  background-color: var(--white);
-  line-height: 0;
-  height: 3em;
-  width: 3em;
-}
-
 .close-modal {
   position: absolute;
   top: 13px;

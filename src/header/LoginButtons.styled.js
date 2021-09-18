@@ -11,6 +11,12 @@ export const Link = styled.a`
   background-color: ${(props) => props.backgroundColor || '#000'};
   border-radius: 4px;
   text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px 2px rgb(0 0 0 / 35%);
+  }
 `;
 
 export const Svg = styled.div`
@@ -18,6 +24,8 @@ export const Svg = styled.div`
   background-color: ${(props) => props.svgIconBackground || '#fff'};
   width: 3em;
   height: 3em;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 `;
 
 export const Text = styled.span`
