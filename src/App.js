@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from './header/header';
-import { MobileMenu } from './header/MobileMenu.style';
+// import { MobileMenu } from './header/MobileMenu.style';
+// import GoogleLogInOut from './login/GoogleLogInOut';
 
 function App() {
   return (
     <React.Fragment>
       <Header />
+      {/* <GoogleLogInOut /> */}
     </React.Fragment>
   );
 }

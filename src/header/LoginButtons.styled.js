@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Link = styled.a`
+export const Button = styled.button`
+  cursor: pointer;
+  border-color: transparent;
   color: #fff;
   display: flex;
   justify-content: flex-start;
@@ -38,19 +40,19 @@ export const Text = styled.span`
 export const LoginButton = ({
   svgPath,
   text,
-  href,
+
   backgroundColor,
   svgIconBackground,
   svgPadding,
 }) => {
   return (
     <>
-      <Link href={href} backgroundColor={backgroundColor}>
+      <Button backgroundColor={backgroundColor}>
         <Svg svgIconBackground={svgIconBackground} svgPadding={svgPadding}>
           {svgPath}
         </Svg>
         <Text>{text}</Text>
-      </Link>
+      </Button>
     </>
   );
 };
